@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Tactile&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background:url(../bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    left: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Syne Tactile', cursive;
+
+
+}
+#hiscoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size:40px ;
+    font-family: 'Syne Tactile', cursive;
+    font-weight: bold;
+}
+#board{
+    background: linear-gradient(rgb(94, 151, 94) , yellow);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr) ;
+}
+.head{
+    background:linear-gradient(red,yellow);
+    border: 1px solid black;
+    transform: scale(1.02);
+    border-radius: 10px;
+
+}
+.snake{
+    background-color: rgb(47, 37, 133);
+    border: .25vmin solid black;
+    border-radius: 14px;
+}
+.food{
+    background: linear-gradient(red , purple);
+    border: .25vmin solid rgb(0, 0, 0);
+    border-radius: 12px;
+
+}
